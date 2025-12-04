@@ -304,3 +304,112 @@ p::first-line {
         transform: translateY(0);
     }
 }
+/* ===== Загальні анімації для сторінок ===== */
+
+/* Ключові кадри для плавної появи */
+@keyframes fadeUpSoft {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Заголовки на всіх сторінках */
+h1 {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+    animation-delay: 0.1s;
+}
+
+h2 {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+/* Перші абзаци, де зазвичай опис */
+p {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+    animation-delay: 0.25s;
+}
+
+/* Головне зображення на index.html */
+.main-img {
+    opacity: 0;
+    animation: fadeUpSoft 0.8s ease-out forwards;
+    animation-delay: 0.35s;
+}
+
+/* Список сторінок на головній */
+ul li {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+    animation-delay: 0.45s;
+}
+/* Анімація карток у галереї */
+.gallery figure {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+}
+
+/* Легка затримка для кожної картки */
+.gallery figure:nth-child(1) { animation-delay: 0.2s; }
+.gallery figure:nth-child(2) { animation-delay: 0.35s; }
+.gallery figure:nth-child(3) { animation-delay: 0.5s; }
+
+/* Ховер-ефект для фото в галереї */
+.gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.gallery figure:hover img {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 25px;
+}
+/* Відгуки клієнтів */
+blockquote {
+    opacity: 0;
+    animation: fadeUpSoft 0.7s ease-out forwards;
+}
+
+/* Перша і друга цитата з різною затримкою */
+blockquote:nth-of-type(1) { animation-delay: 0.2s; }
+blockquote:nth-of-type(2) { animation-delay: 0.35s; }
+
+/* Таблиця з роботами */
+.clients-table {
+    opacity: 0;
+    animation: fadeUpSoft 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Легкий ховер для рядків таблиці (у тебе вже є, але додамо плавність) */
+.clients-table tbody tr {
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.clients-table tbody tr:hover {
+    transform: translateY(-2px);
+}
+/* Плавна поява навігації */
+nav {
+    opacity: 0;
+    animation: fadeUpSoft 0.6s ease-out forwards;
+    animation-delay: 0.05s;
+}
+
+/* Плавні ховери для посилань меню */
+nav a {
+    transition: color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
+}
+
+nav a:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.7);
+}
