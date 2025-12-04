@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+/* --------- Основний стиль сторінки --------- */
+body {
+    font-family: "Cinzel Decorative", serif;
+    color: #ffffff;
+    padding: 25px;
+    margin: 0;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* --------- Заголовки --------- */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* --------- Навігація --------- */
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 15px;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a50000;
+}
+
+/* Псевдокласи */
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #a50000;
+}
+
+a:active {
+    color: #ff4081;
+}
+
+/* --------- Звичайні зображення --------- */
+.main-img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Заокруглені */
+.round {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* --------- Галерея з figure та figcaption --------- */
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    text-align: center;
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.gallery figcaption {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* --------- Стилі для blockquote --------- */
+blockquote {
+    border-left: 3px solid #ffffff;
+    padding-left: 12px;
+    color: #ffffff;
+}
+
+/* --------- Псевдоелементи --------- */
+p::first-letter {
+    font-size: 200%;
+    color: #b20000;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-style: italic;
+    color: #fdfdfd;
+}
+
+/* ====== Блоки для завдання 1 (файл blocks.html) ====== */
+.block {
+    width: 80%;
+    max-width: 800px;
+    min-height: 120px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: block;
+}
+
+.block-one {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.block-two {
+    background-color: #ffe4e1;
+    color: #222;
+    border-style: dashed;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.block-three {
+    color: #fff;
+    background-image: url("images/work3.jpg"); /* фон блоку */
+    background-size: cover;
+    background-position: center;
+}
+
+.inside-img {
+    display: block;
+    max-width: 200px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* ====== Таблиця клієнтів (завдання 2–7) ====== */
+.clients-table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.clients-table th,
+.clients-table td {
+    border: 1px solid #777;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.clients-table thead th {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+/* Zebra stripes */
+.clients-table tbody tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* Hover */
+.clients-table tbody tr:hover {
+    background-color: #3b2b3b;
+}
+
+/* Назва таблиці */
+.clients-table caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
